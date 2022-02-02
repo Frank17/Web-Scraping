@@ -22,7 +22,7 @@ requests.get(url, proxies=proxies)
 ### Cookie
 In short, **cookie** is a piece of data servers used for tracking sessions and identifying users. Although it is typically stored on users' computers, there can be exceptions to it: 
 
-HTTP is often known as a **stateless** protocol due to the fact that it processes each request independently, without regards to the previous ones. However, with the advent of cookies, the improved version of HTTP —— namely, HTTPS —— becomes a **stateful** protocol. This improvement fundamentally changes the way client interacts with the server: Using cookie, the server is able to "remember" the information carried by previous requests and treats this request accordingly.
+HTTP is often known as a **stateless** protocol due to the fact that it processes each request independently, without regards to the previous ones. However, with the advent of cookies, the improved version of HTTP —— namely, HTTPS —— becomes a **stateful** protocol. This improvement fundamentally changes the way client interacts with the server: Using cookie, the server is able to "remember" the information carried by previous requests and treats the current request accordingly.
 
 ### Cookie with `requests`
 

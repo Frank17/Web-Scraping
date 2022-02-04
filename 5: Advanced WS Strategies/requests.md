@@ -24,6 +24,8 @@ In short, **cookie** is a piece of data servers used for tracking sessions and i
 
 HTTP is often known as a **stateless** protocol due to the fact that it processes each request independently, without regards to the previous ones. However, with the advent of cookies, the improved version of HTTP —— namely, HTTPS —— was designed to be a **stateful** protocol. This improvement fundamentally changes the way client interacts with the server: Using cookie, the server is able to "remember" the information carried by previous requests and treats the current request accordingly.
 
+
+
 ### Cookie with `requests`
 
 Here are some basic steps to follow:
@@ -31,6 +33,6 @@ Here are some basic steps to follow:
 2. Create a `session` object using `requests.Session()`
 3. Make a post request to URL in Step 1 (e.g. `session.post(url, data={'username': ABC, 'password': 123})` [1]
 4. Get the URL of the target page (the page that is only accessible after login)
-5. Using the same `session` in Step 3 and 2, make a get request to that URL
+5. Using the same `session` object in Step 3 and 2, make a get request to that URL
 
 [1]: This step will save the cookies to the `session` object you created in Step 2.
